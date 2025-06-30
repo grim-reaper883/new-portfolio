@@ -17,21 +17,6 @@ const skillItem = [
     desc: 'Interaction'
   },
   {
-    imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
-    desc: 'Web Server'
-  },
-  {
-    imgSrc: '/images/expressjs.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework'
-  },
-  {
-    imgSrc: '/images/mongodb.svg',
-    label: 'MongoDB',
-    desc: 'Database'
-  },
-  {
     imgSrc: '/images/react.svg',
     label: 'React',
     desc: 'Framework'
@@ -53,7 +38,7 @@ const Skill = () => {
   return (
   <section className="section">
     <div className="container">
-      <h2 className="headline-2">
+      <h2 className="headline-2 reveal-up">
         Essential Tools I use
       </h2>
 
@@ -69,6 +54,7 @@ const Skill = () => {
             imgSrc={imgSrc}
             label={label}
             desc={desc}
+            classes="reveal-up"
             />
           ))
         }
